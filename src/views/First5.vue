@@ -1,7 +1,10 @@
 <template>
 <div class="page">
-    <h1>THE FIRST FIVE</h1>
-    <ReleaseCard url='https://api.discogs.com/releases/1601354'/>
+    <ReleaseCard url='https://api.discogs.com/releases/1601354' />
+    <ReleaseCard url='https://api.discogs.com/releases/1191772' />
+    <ReleaseCard url='https://api.discogs.com/releases/744810' />
+    <ReleaseCard url='https://api.discogs.com/releases/523351' />
+    <ReleaseCard url='https://api.discogs.com/releases/1217804' />
 </div>
 </template>
 

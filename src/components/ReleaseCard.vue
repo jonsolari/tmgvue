@@ -1,7 +1,11 @@
 <template>
 <div class="card">
-    <p>{{this.info.title}}</p>
+    <a :href="this.marketLink">
+    <img class="cover" :src="this.imagePath">
+    <p class="two"><strong>{{this.info.title}}</strong></p>
     <p>{{this.artist}}</p>
+    <p>Lowest Price for LP: {{this.info.lowest_price}}</p>
+    </a>
 </div>
 </template>
 
@@ -15,11 +19,17 @@ export default{
     },
     data(){
         return {
-            info: {
-                
-            },
-            // cover: `@/assets/${this.info.title}.jpg`,
+            info: {},
+            cover: '',
             artist: 'the Mountain Goats'
+        }
+    },
+    computed: {
+        imagePath(){
+            return require('../assets/' + this.info.title + '.jpg')
+        },
+        marketLink(){
+            return 'http://www.discogs.com/sell/release/' + this.info.id
         }
     },
     created(){
@@ -38,12 +48,20 @@ export default{
   text-align: center;
   border: 1px solid black;
   padding: 1.5rem;
-  width: 23rem;
+  width: 35rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-self: center;
   background-color: white;
   margin: 1rem
+}
+.two{
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+.cover{
+	height: 349px;
+	margin: 1rem auto;
 }
 </style>
