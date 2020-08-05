@@ -4,7 +4,8 @@
     <img class="cover" :src="this.imagePath">
     <p class="two"><strong>{{this.info.title}}</strong></p>
     <p>{{this.artist}}</p>
-    <p>Lowest Price for LP: {{this.info.lowest_price}}</p>
+    <p>Lowest Price:</p> 
+    <p class=price>{{this.lowestPrice}}</p>
     </a>
 </div>
 </template>
@@ -19,7 +20,9 @@ export default{
     },
     data(){
         return {
-            info: {},
+            info: {
+                
+            },
             cover: '',
             artist: 'the Mountain Goats'
         }
@@ -30,6 +33,14 @@ export default{
         },
         marketLink(){
             return 'http://www.discogs.com/sell/release/' + this.info.id
+        },
+        lowestPrice(){
+            if (this.info.lowest_price != null){
+                return "$" + this.info.lowest_price;
+            }
+            else {
+                return 'Not Available';
+            }
         }
     },
     created(){
@@ -63,5 +74,10 @@ export default{
 .cover{
 	height: 349px;
 	margin: 1rem auto;
+}
+.price{
+	color: #32585D;
+	font-size: 2.2rem;
+	line-height: 3rem;
 }
 </style>
