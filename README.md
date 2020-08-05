@@ -1,24 +1,7 @@
-# tmgvue
+# the Mountain Goats Online eXchange
 
-## Project setup
-```
-npm install
-```
+This website is an experiment in converting a web app from React to Vue.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+It pings the Discogs API for the lowest current prices for the first five (terribly rare) Mountain Goats albums on vinyl, as well as populating links to each marketplace listing.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Deployed [here](https://tmgvue.vercel.app/)
