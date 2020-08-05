@@ -1,5 +1,7 @@
 <template>
 <div class="card">
+    <p>{{this.info.title}}</p>
+    <p>{{this.artist}}</p>
 </div>
 </template>
 
@@ -10,15 +12,24 @@ export default{
         url: {
             type: String
         }
+    },
+    data(){
+        return {
+            info: {
+                
+            },
+            // cover: `@/assets/${this.info.title}.jpg`,
+            artist: 'the Mountain Goats'
+        }
+    },
+    created(){
+        fetch(this.url)
+            .then(response => response.json())
+            .then(response => (this.info = response))
+            .catch(err => console.log(err))
     }
-},
-data(){
-    title: response.title,
-    artist: "the Mountain Goats",
-    price: response.lowest_price ? `$${response.lowest_price}` : "Not Available.",
-    cover: `/img/${response.title}.jpg`,
-    market: `http://www.discogs.com/sell/release/${response.id}`
 }
+// console.log(this.cover)
 </script>
 
 
