@@ -3,8 +3,8 @@
     <a :href="this.marketLink">
     <img class="cover" :src="this.imagePath">
     <strong><p class="two">{{this.info.title}}</p></strong>
-    <p class="two">{{this.artist}}</p>
-    <p>Lowest Price:</p> 
+    <p class="three">{{this.artist}}</p>
+    <p>Lowest Price for LP:</p> 
     <p class=price>{{this.lowestPrice}}</p>
     </a>
 </div>
@@ -68,7 +68,7 @@ export default{
   margin: 1rem
 }
 .card:hover{
-	transform: scale(1.05);
+	transform: scale(1.01);
 	text-align: center;
 	border: 1px solid black;
 	padding: 1.5rem;
@@ -81,6 +81,10 @@ export default{
 }
 .two{
   font-size: 4.2rem;
+  margin: auto;
+}
+.three{
+  font-size: 3.8rem;
   margin: auto;
 }
 .cover{

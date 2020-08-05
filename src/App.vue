@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <div class="tab">
-      <img class="logo" src='./assets/tMGox.png'>
-      <router-link class="lynx" to="/">The First Five LPs</router-link> |
-      <router-link class="lynx" to="/about">About</router-link>
+      <div class="tagline">
+      <router-link to="/"><img class="logo" src='./assets/tMGox.png'></router-link>
+      <p class="smaller">the Mountain Goats<br/>Online eXchange</p>
+      </div>
+      <router-link class="lynx" to="/">EARLY LPs</router-link> |
+      <router-link class="lynx" to="/about">ABOUT</router-link>
     </div>
     <router-view/>
   </div>
@@ -392,31 +395,49 @@ em{
 	display: flex;
 	/* flex-direction: column; */
 	background-color: black;
-	height: 6rem;
+	height: 9rem;
 }
 
 .lynx{
-	font-size: 1.4rem;
+  display: flex;
+  align-self: center;
+	font-size: 2.4rem;
 	color: white;
 	text-decoration: none;
-	padding-top: 1.4rem;
 	padding-right: 1.4rem;
-	padding-left: 1.4rem;	
+	padding-left: 2rem;	 
 }
-
+ 
 .lynx:hover{
-	font-size: 1.4em;
+	font-size: 2.4rem;
 	color: #F19433;
 	text-decoration: none;
-	padding-top: 1.4rem;
 	padding-right: 1.4rem;
-	padding-left: 1.4rem;	
+	padding-left: 2rem;	 
 }
 
 .logo{
-	max-height: 100%;
-	max-width: 85%;
-	margin-left: 1rem;
-	margin-right: 1rem;
+	max-height: 120px;
+	max-width: 120px;
+	
 }
+
+.tagline{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+	margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.smaller{
+  margin-top: -.8rem;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  line-height: 1.3rem;
+}
+
 </style>
