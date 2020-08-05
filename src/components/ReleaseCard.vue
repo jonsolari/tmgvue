@@ -99,10 +99,10 @@ export default{
 
 @media only screen and (max-width: 645px){
   .card{
-      width: 33rem;
+      width: 28rem;
   }
   .cover{
-      height: 300px;
+      height: 280px;
   }
 }
 </style>
