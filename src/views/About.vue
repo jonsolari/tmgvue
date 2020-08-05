@@ -1,7 +1,7 @@
 <template>
 <div class="about">
   <p>This website is an experiment in converting a web app from React to Vue.</p>
-  <p>It pings the <a :href="this.discogs">Discogs API</a> for the lowest current prices for the first five <a :href="this.mtngoats">Mountain Goats</a> albums on vinyl, as well as populating links to each marketplace listing.</p>
+  <p>It pings the <a :href="this.discogs">Discogs API</a> for the lowest current prices for the first five (terribly rare) <a :href="this.mtngoats">Mountain Goats</a> albums on vinyl, as well as populating links to each marketplace listing.</p>
   <p>My code is <a :href="this.github">here</a> if you'd like to take a look.</p>
   </div>
 </template>
