@@ -96,4 +96,13 @@ export default{
 	font-size: 4.2rem;
     margin-top: 1rem;
 }
+
+@media only screen and (max-width: 645px){
+  .card{
+      width: 33rem;
+  }
+  .cover{
+      height: 300px;
+  }
+}
 </style>

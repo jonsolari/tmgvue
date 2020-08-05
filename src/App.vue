@@ -393,7 +393,6 @@ em{
 
 .tab{
 	display: flex;
-	/* flex-direction: column; */
 	background-color: black;
 	height: 9rem;
 }
@@ -438,6 +437,16 @@ em{
   color: white;
   text-align: center;
   line-height: 1.3rem;
+}
+
+@media only screen and (max-width: 645px){
+  .tab{
+    flex-direction: column;
+    height: 18rem;
+  }
+  .lynx{
+    margin-top: .5rem;
+  }
 }
 
 </style>
