@@ -2,8 +2,8 @@
 <div class="card">
     <a :href="this.marketLink">
     <img class="cover" :src="this.imagePath">
-    <p class="two"><strong>{{this.info.title}}</strong></p>
-    <p>{{this.artist}}</p>
+    <strong><p class="two">{{this.info.title}}</p></strong>
+    <p class="two">{{this.artist}}</p>
     <p>Lowest Price:</p> 
     <p class=price>{{this.lowestPrice}}</p>
     </a>
@@ -23,13 +23,13 @@ export default{
             info: {
                 
             },
-            cover: '',
             artist: 'the Mountain Goats'
         }
     },
     computed: {
         imagePath(){
-            return require('../assets/' + this.info.title + '.jpg')
+            console.log('../assets/' + this.info.title.replace('\'', '') + '.jpg')
+            return require('../assets/' + this.info.title.replace('\'', '') + '.jpg')
         },
         marketLink(){
             return 'http://www.discogs.com/sell/release/' + this.info.id
@@ -50,7 +50,7 @@ export default{
             .catch(err => console.log(err))
     }
 }
-// console.log(this.cover)
+
 </script>
 
 
@@ -67,9 +67,21 @@ export default{
   background-color: white;
   margin: 1rem
 }
+.card:hover{
+	transform: scale(1.05);
+	text-align: center;
+	border: 1px solid black;
+	padding: 1.5rem;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color: #F0FFFF;
+	margin: 1rem
+}
 .two{
-  font-size: 2.2rem;
-  line-height: 3rem;
+  font-size: 4.2rem;
+  margin: auto;
 }
 .cover{
 	height: 349px;
@@ -77,7 +89,7 @@ export default{
 }
 .price{
 	color: #32585D;
-	font-size: 2.2rem;
-	line-height: 3rem;
+	font-size: 4.2rem;
+    margin-top: 1rem;
 }
 </style>

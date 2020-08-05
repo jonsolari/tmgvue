@@ -376,6 +376,11 @@ a{
 	text-decoration: none;
 }
 
+p{
+	margin: 1rem auto;
+	font-size: 2.3rem;
+}
+
 strong{
 	font-weight: bold;
 }
