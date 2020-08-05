@@ -20,7 +20,7 @@ export default{
     },
     data(){
         return {
-            info: {
+            info: { 
                 
             },
             artist: 'the Mountain Goats'
@@ -28,8 +28,7 @@ export default{
     },
     computed: {
         imagePath(){
-            console.log('../assets/' + this.info.title.replace('\'', '') + '.jpg')
-            return require('../assets/' + this.info.title.replace('\'', '') + '.jpg')
+            return require('../assets/' + this.info.title + '.jpg')
         },
         marketLink(){
             return 'http://www.discogs.com/sell/release/' + this.info.id
@@ -49,6 +48,7 @@ export default{
             .then(response => (this.info = response))
             .catch(err => console.log(err))
     }
+    
 }
 
 </script>
