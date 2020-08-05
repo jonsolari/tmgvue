@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">The First Five</router-link> |
-      <router-link to="/EPs">EPs &c.</router-link> |
-      <router-link to="/GoodLuck">Good Luck Chief</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="tab">
+      <img class="logo" src='./assets/tMGox.png'>
+      <router-link class="lynx" to="/">The First Five LPs</router-link> |
+      <router-link class="lynx" to="/about">About</router-link>
     </div>
     <router-view/>
   </div>
@@ -387,5 +386,37 @@ strong{
 
 em{
 	font-style: italic
+}
+
+.tab{
+	display: flex;
+	/* flex-direction: column; */
+	background-color: black;
+	height: 6rem;
+}
+
+.lynx{
+	font-size: 1.4rem;
+	color: white;
+	text-decoration: none;
+	padding-top: 1.4rem;
+	padding-right: 1.4rem;
+	padding-left: 1.4rem;	
+}
+
+.lynx:hover{
+	font-size: 1.4em;
+	color: #F19433;
+	text-decoration: none;
+	padding-top: 1.4rem;
+	padding-right: 1.4rem;
+	padding-left: 1.4rem;	
+}
+
+.logo{
+	max-height: 100%;
+	max-width: 85%;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 </style>
