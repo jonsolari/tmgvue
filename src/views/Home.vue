@@ -19,7 +19,7 @@ export default {
 <style>
 .home{
   display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 </style>
