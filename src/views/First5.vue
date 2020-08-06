@@ -25,6 +25,7 @@ export default{
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 1rem;
+  max-width: 140rem;
   width: 100%;
   height: 100%;
 }
