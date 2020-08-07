@@ -1,10 +1,10 @@
 <template>
 <div class="page">
-    <ReleaseCard name="Zopilote Machine" v-bind:price="this.figures[0].price" v-bind:url="this.figures[0].url" />
-    <!-- <ReleaseCard url='https://api.discogs.com/releases/1191772' />
-    <ReleaseCard url='https://api.discogs.com/releases/744810' />
-    <ReleaseCard url='https://api.discogs.com/releases/523351' />
-    <ReleaseCard url='https://api.discogs.com/releases/1217804' /> -->
+    <ReleaseCard title="Zopilote Machine" v-bind:info="this.figures[0]" />
+    <ReleaseCard title="Sweden" v-bind:info="this.figures[1]" />
+    <ReleaseCard title="Nothing For Juice" v-bind:info="this.figures[2]" />
+    <ReleaseCard title="Full Force Galesburg" v-bind:info="this.figures[3]" />
+    <ReleaseCard title="The Coroner's Gambit" v-bind:info="this.figures[4]" />
 </div>
 </template>
 

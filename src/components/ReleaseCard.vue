@@ -5,7 +5,7 @@
     <strong><p class="two">{{this.title}}</p></strong>
     <p class="three">{{this.artist}}</p>
     <p>Lowest Price for LP:</p> 
-    <p class=price>{{this.info.price}}</p>
+    <p class=price>{{this.lowestPrice}}</p>
     </a>
 </div>
 </template>
@@ -23,35 +23,22 @@ export default{
     },
     data(){
         return { 
-            // info: { 
-                
-            // },
             artist: 'the Mountain Goats'
         }
     },
     computed: {
         imagePath(){
-            return require('../assets/' + this.info.title + '.jpg')
+            return require('../assets/' + this.title + '.jpg')
         },
-        // marketLink(){
-        //     return 'http://www.discogs.com/sell/release/' + this.info.id
-        // },
         lowestPrice(){
-            if (this.price != null){
-                return "$" + this.price;
+            if (this.info.price != null){
+                return "$" + this.info.price;
             }
             else {
                 return 'Not Available';
             }
         }
     }
-    // created(){
-    //     fetch(this.url)
-    //         .then(response => response.json())
-    //         .then(response => (this.info = response))
-    //         .catch(err => console.log(err))
-    // }
-    
 }
 
 </script>
