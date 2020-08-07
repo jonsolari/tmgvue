@@ -1,11 +1,11 @@
 <template>
 <div class="card">
-    <a :href="this.marketLink">
+    <a :href="this.info.url">
     <img class="cover" :src="this.imagePath">
-    <strong><p class="two">{{this.info.title}}</p></strong>
+    <strong><p class="two">{{this.title}}</p></strong>
     <p class="three">{{this.artist}}</p>
     <p>Lowest Price for LP:</p> 
-    <p class=price>{{this.lowestPrice}}</p>
+    <p class=price>{{this.info.price}}</p>
     </a>
 </div>
 </template>
@@ -14,15 +14,18 @@
 export default{
     name: 'ReleaseCard',
     props: {
-        url: {
+        title: {
             type: String
+        },
+        info:{
+            type: Object
         }
     },
     data(){
         return { 
-            info: { 
+            // info: { 
                 
-            },
+            // },
             artist: 'the Mountain Goats'
         }
     },
@@ -30,24 +33,24 @@ export default{
         imagePath(){
             return require('../assets/' + this.info.title + '.jpg')
         },
-        marketLink(){
-            return 'http://www.discogs.com/sell/release/' + this.info.id
-        },
+        // marketLink(){
+        //     return 'http://www.discogs.com/sell/release/' + this.info.id
+        // },
         lowestPrice(){
-            if (this.info.lowest_price != null){
-                return "$" + this.info.lowest_price;
+            if (this.price != null){
+                return "$" + this.price;
             }
             else {
                 return 'Not Available';
             }
         }
-    },
-    created(){
-        fetch(this.url)
-            .then(response => response.json())
-            .then(response => (this.info = response))
-            .catch(err => console.log(err))
     }
+    // created(){
+    //     fetch(this.url)
+    //         .then(response => response.json())
+    //         .then(response => (this.info = response))
+    //         .catch(err => console.log(err))
+    // }
     
 }
 

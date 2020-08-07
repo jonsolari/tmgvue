@@ -1,22 +1,29 @@
 <template>
 <div class="page">
-    <ReleaseCard url='https://api.discogs.com/releases/1601354' />
-    <ReleaseCard url='https://api.discogs.com/releases/1191772' />
+    <ReleaseCard name="Zopilote Machine" v-bind:price="this.figures[0].price" v-bind:url="this.figures[0].url" />
+    <!-- <ReleaseCard url='https://api.discogs.com/releases/1191772' />
     <ReleaseCard url='https://api.discogs.com/releases/744810' />
     <ReleaseCard url='https://api.discogs.com/releases/523351' />
-    <ReleaseCard url='https://api.discogs.com/releases/1217804' />
+    <ReleaseCard url='https://api.discogs.com/releases/1217804' /> -->
 </div>
 </template>
 
 <script>
 import ReleaseCard from '@/components/ReleaseCard.vue';
+import json from '@/json/data.json';
 
 export default{
     name: 'First5',
     components: {
         ReleaseCard
+    },
+    data(){
+        return{
+            figures: json
+        }
     }
 }
+
 </script>
 
 <style scoped>
