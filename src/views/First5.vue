@@ -2,7 +2,7 @@
 <div class="page">
     <ReleaseCard title="Zopilote Machine" v-bind:info="this.figures[0]" />
     <ReleaseCard title="Sweden" v-bind:info="this.figures[1]" />
-    <ReleaseCard title="Nothing For Juice" v-bind:info="this.figures[2]" />
+    <ReleaseCard title="Nothing for Juice" v-bind:info="this.figures[2]" />
     <ReleaseCard title="Full Force Galesburg" v-bind:info="this.figures[3]" />
     <ReleaseCard title="The Coroner's Gambit" v-bind:info="this.figures[4]" />
 </div>

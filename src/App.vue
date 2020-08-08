@@ -2,8 +2,9 @@
   <div id="app">
     <div class="tab">
       <div class="tagline">
-      <router-link to="/"><img class="logo" src='./assets/tMGox.png'></router-link>
+      <router-link to="/"><img class="logo" src='./assets/tMGox.png'>
       <p class="smaller">the Mountain Goats<br/>Online eXchange</p>
+      </router-link>
       </div>
       <router-link class="lynx" to="/">EARLY LPs</router-link> 
       <router-link class="lynx" to="/scarcities">SCARCITIES</router-link> 

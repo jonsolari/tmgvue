@@ -1,8 +1,8 @@
 <template>
 <div class="page">
     <MultiformatCard title="New Asian Cinema" v-bind:info="this.figures[5]" />
-    <MultiformatCard title="Isopanisad Radio Hour" v-bind:info="this.figures[6]" />
-    <MultiformatCard title="Devil In The Shortwave" v-bind:info="this.figures[7]" />
+    <MultiformatCard title="Isopaniṣad Radio Hour" v-bind:info="this.figures[6]" />
+    <MultiformatCard title="Devil in the Shortwave" v-bind:info="this.figures[7]" />
     <MultiformatCard title="Satanic Messiah EP" v-bind:info="this.figures[9]" />
     <MultiformatCard title="Moon Colony Bloodbath" v-bind:info="this.figures[10]" />
     <MultiformatCard title="The Life of the World to Come" v-bind:info="this.figures[14]" />

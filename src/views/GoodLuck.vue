@@ -1,7 +1,7 @@
 <template>
 <div class="page">
     <MultiformatCard title="Taboo VI: The Homecoming" v-bind:info="this.figures[11]" />
-    <MultiformatCard title="Come, Come To The Sunset Tree" v-bind:info="this.figures[12]" />
+    <MultiformatCard title="Come, Come to the Sunset Tree" v-bind:info="this.figures[12]" />
     <MultiformatCard title="On Juhu Beach" v-bind:info="this.figures[13]" />
 </div>
 </template>
