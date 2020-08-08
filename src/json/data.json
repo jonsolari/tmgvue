@@ -33,7 +33,7 @@
     },
     "8": {
         "price": null,
-        "url": "http://www.discogs.com/sell/release/1526609"
+        "url": "http://www.discogs.com/sell/release/4880289"
     },
     "9": {
         "price": null,
@@ -41,7 +41,7 @@
     },
     "10": {
         "price": null,
-        "url": "http://www.discogs.com/sell/release/1763341"
+        "url": "http://www.discogs.com/sell/release/5118937"
     },
     "11": {
         "price": null,
@@ -62,5 +62,17 @@
     "15": {
         "price": 65.78,
         "url": "http://www.discogs.com/sell/release/15506961"
+    },
+    "16": {
+        "price": null,
+        "url": "http://www.discogs.com/sell/release/2306617"
+    },
+    "17": {
+        "price": "60.00",
+        "url": "https://www.ebay.com/itm/The-Mountain-Goats-All-Survivors-Pack-Red-Cassette-Ultra-Rare-NEVER-PLAYED/274450289262?hash=item3fe683126e:g:MN4AAOSwoWRfKu1K"
+    },
+    "18": {
+        "price": 59.98,
+        "url": "http://www.discogs.com/sell/release/3916742"
     }
 }

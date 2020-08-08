@@ -5,7 +5,9 @@
       <router-link to="/"><img class="logo" src='./assets/tMGox.png'></router-link>
       <p class="smaller">the Mountain Goats<br/>Online eXchange</p>
       </div>
-      <router-link class="lynx" to="/">EARLY LPs</router-link> |
+      <router-link class="lynx" to="/">EARLY LPs</router-link> 
+      <router-link class="lynx" to="/scarcities">SCARCITIES</router-link> 
+      <router-link class="lynx" to="/goodluck">GOOD LUCK</router-link> |
       <router-link class="lynx" to="/about">ABOUT</router-link>
     </div>
     <router-view/>
