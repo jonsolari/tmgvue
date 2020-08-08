@@ -445,7 +445,7 @@ em{
 @media only screen and (max-width: 645px){
   .tab{
     flex-direction: column;
-    height: 18rem;
+    height: 25rem;
   }
   .lynx{
     margin-top: .5rem;

@@ -3,7 +3,6 @@
     <a :href="this.info.url">
     <img class="cover" :src="this.imagePath">
     <strong><p class="two">{{this.title}}</p></strong>
-    <p class="three">{{this.artist}}</p>
     <p>Lowest Price:</p> 
     <p class=price>{{this.lowestPrice}}</p>
     </a>
@@ -19,11 +18,6 @@ export default{
         },
         info:{
             type: Object
-        }
-    },
-    data(){
-        return { 
-            artist: 'the Mountain Goats'
         }
     },
     computed: {
