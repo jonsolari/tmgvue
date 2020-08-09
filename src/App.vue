@@ -452,6 +452,11 @@ em{
   padding-right: 0rem;
 	padding-left: 0rem;	 
   }
+  .lynx:hover{
+  margin-top: .5rem;
+  padding-right: 0rem;
+	padding-left: 0rem;	 
+  }
 }
 
 </style>
