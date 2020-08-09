@@ -1,9 +1,9 @@
 <template>
 <div class="about">
-  <p>This website exists because I needed to learn <a :href="this.vuejs">Vue.js</a>, and because I wanted to make a <a :href="this.bitcoin">dumb bitcoin joke</a>.</p>
+  <p>This website exists because I wanted to get some practice with <a :href="this.vuejs">Vue.js</a>, and also because I wanted to make a <a :href="this.bitcoin">dumb bitcoin joke</a>.</p>
   <p>A python script runs every 15 minutes, pinging the Discogs API and scraping eBay to compare their lowest current prices for some very rare Mountain Goats releases, and then populates links to those listings. The code is <a :href="this.github">here</a> if you'd like to take a look.</p>
-  <p>Many of the releases shown here are available digitally, please go support the artist on <a :href="this.bandcamp">Bandcamp</a> or <a :href="this.itunes">iTunes</a>. Some of the 4AD albums appear to be on <a :href="this.hdtracks">HDTracks</a> if 96/24 is your thing.</p><br/>
-  <p>If you want to hire me, or perhaps give me your vinyl copy of <em>Sweden</em>, my email address is <strong>jon.s.solari at gmail.</strong></p>
+  <p>Many of the releases shown here are available digitally, so please go support the artist on <a :href="this.bandcamp">Bandcamp</a> or <a :href="this.itunes">iTunes</a>. Some of the 4AD albums appear to be on <a :href="this.hdtracks">HDTracks</a> if 96/24 is your thing.</p><br/>
+  <p>If you'd like to hire me, or perhaps give me your vinyl copy of <em>Sweden</em>, my email address is <strong>jon.s.solari at gmail.</strong></p>
   </div>
 </template>
 
