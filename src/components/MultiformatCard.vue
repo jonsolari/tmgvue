@@ -3,7 +3,7 @@
     <a :href="this.info.url">
     <img class="cover" :src="this.imagePath">
     <strong><p class="two">{{this.title}}</p></strong>
-    <p>Lowest Price for LP:</p> 
+    <p>Lowest Price:</p> 
     <p class=price>{{this.lowestPrice}}</p>
     </a>
 </div>
@@ -11,7 +11,7 @@
 
 <script>
 export default{
-    name: 'ReleaseCard',
+    name: 'MultiformatCard',
     props: {
         title: {
             type: String
@@ -22,7 +22,7 @@ export default{
     },
     computed: {
         imagePath(){
-            return require('../assets/' + this.title + '.jpg')
+            return require('../assets/' + this.title.replace(':', '') + '.jpg')
         },
         lowestPrice(){
             if (this.info.price != null){
