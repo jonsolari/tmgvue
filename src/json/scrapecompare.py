@@ -1,6 +1,7 @@
 import sys
 import requests
 import json
+import time
 from bs4 import BeautifulSoup
 
 
@@ -101,6 +102,8 @@ while k < len(ebaydata):
     else:
         pass
     k += 1
+
+ebaydata[19] = time.time()
 
 json_object = json.dumps(ebaydata, indent = 4)
 

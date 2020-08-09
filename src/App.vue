@@ -8,7 +8,7 @@
       </div>
       <router-link class="lynx" to="/">EARLY LPs</router-link> 
       <router-link class="lynx" to="/scarcities">SCARCITIES</router-link> 
-      <router-link class="lynx" to="/goodluck">GOOD LUCK</router-link> |
+      <router-link class="lynx" to="/goodluck">GOOD LUCK</router-link>
       <router-link class="lynx" to="/about">ABOUT</router-link>
     </div>
     <router-view/>
@@ -444,11 +444,13 @@ em{
 
 @media only screen and (max-width: 645px){
   .tab{
-    flex-direction: column;
-    height: 25rem;
+  flex-direction: column;
+  height: 23rem;
   }
   .lynx{
-    margin-top: .5rem;
+  margin-top: .5rem;
+  padding-right: 0rem;
+	padding-left: 0rem;	 
   }
 }
 
