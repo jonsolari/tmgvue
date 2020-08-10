@@ -441,6 +441,9 @@ em{
   text-align: center;
   line-height: 1.3rem;
 }
+.router-link-exact-active{
+  color: #F19433;
+}
 
 @media only screen and (max-width: 645px){
   .tab{
