@@ -26,7 +26,7 @@ export default{
         },
         lowestPrice(){
             if (this.info.price != null){
-                return "$" + this.info.price;
+                return "$" + this.info.price.toFixed(2);
             }
             else {
                 return 'Not Available';
