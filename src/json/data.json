@@ -1,6 +1,6 @@
 {
     "0": {
-        "price": 195.0,
+        "price": 277.38,
         "url": "http://www.discogs.com/sell/release/1601354"
     },
     "1": {
@@ -56,12 +56,12 @@
         "url": "http://www.discogs.com/sell/release/2873969"
     },
     "14": {
-        "price": null,
+        "price": 50.0,
         "url": "http://www.discogs.com/sell/release/2732093"
     },
     "15": {
-        "price": 88.0,
-        "url": "http://www.discogs.com/sell/release/15517693"
+        "price": "129.99",
+        "url": "https://www.ebay.com/itm/THE-MOUNTAIN-GOATS-Songs-For-Pierre-Chuvin-cassette-tape-2020-Silver-Sparkle-OOP/224070282149?hash=item342ba12ba5:g:wTMAAOSww~9fAz-Z"
     },
     "16": {
         "price": null,
@@ -75,5 +75,5 @@
         "price": 65.48,
         "url": "http://www.discogs.com/sell/release/3916742"
     },
-    "19": 1597944699.4543538
+    "19": 1599076145.789027
 }
