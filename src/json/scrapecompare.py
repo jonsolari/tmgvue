@@ -17,9 +17,11 @@ def get_page(url):
 def get_detail_data(soup):
     nope = soup.findAll(text='No exact matches found')
     
+    href = soup.find(class_="s-item__image").find('a', href=True).get('href')
     h3 = soup.find('h3', class_="s-item__title").text
     span = soup.find('span', class_="s-item__price").text
-    href = soup.find('a', class_="s-item__link", href=True).get('href')
+
+    
 
     total = { 'price': 0, 'url' : '' }
 
@@ -28,6 +30,7 @@ def get_detail_data(soup):
     else:
         total['price'] = span[1:]
         total['url'] = href
+        print(total)
         return total
 
 releaselist = ["mountain goats zopilote machine lp", "mountain goats sweden lp", "mountain goats nothing for juice lp", "mountain goats full force galesburg lp", "mountain goats coroner's gambit lp", "mountain goats new asian cinema", "mountain goats isopanisad radio hour", "mountain goats devil in the shortwave", "mountain goats black pear tree", "mountain goats satanic messiah", "mountain goats moon colony bloodbath", "mountain goats taboo cassette", "mountain goats come come to the sunset tree", "mountain goats on juhu beach", "mountain goats life of the world to come dvd", "mountain goats songs for pierre chuvin cassette", "mountain goats jam eater blues", "mountain goats all survivors pack", "mountain goats steal smoked fish"]
@@ -72,7 +75,7 @@ def dcompare(master):
     if total['price'] == high:
         total['price'] = None
         total['url'] = emptyurl
-    print(total)
+    # print(total)
     return total
 
 i = 0
