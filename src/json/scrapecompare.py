@@ -17,13 +17,13 @@ def get_page(url):
 def get_detail_data(soup):
     nope = soup.findAll(text='No exact matches found')
     
-    href = soup.find(class_="s-item__image").find('a', href=True).get('href')
-    h3 = soup.find('h3', class_="s-item__title").text
-    span = soup.find('span', class_="s-item__price").text
+    href = soup.find('div', {'id': 'srp-river-results'}).find(class_="s-item__image").find('a').get('href')
+    h3 = soup.find('div', {'id': 'srp-river-results'}).find('h3', class_="s-item__title").text
+    span = soup.find('div', {'id': 'srp-river-results'}).find('span', class_="s-item__price").text
 
     
 
-    total = { 'price': 0, 'url' : '' }
+    total = { 'price': 0, 'url' : ''}
 
     if nope != []:
         return None
